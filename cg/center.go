@@ -1,8 +1,8 @@
 package cg
 
 import (
-	"strings"
 	"github.com/gmaclinuxer/gogame/ipc"
+	"strings"
 )
 
 // CenterServer must implement ipc.Server interface
@@ -43,6 +43,8 @@ func (server *CenterServer) Handle(method, params string) *ipc.Response {
 	default:
 		return &ipc.Response{Code: "404", Body: strings.Join([]string{method, params}, ":")}
 	}
+
+	return &ipc.Response{Code: "200"}
 }
 
 func (server *CenterServer) Name() string {

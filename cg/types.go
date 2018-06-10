@@ -1,8 +1,8 @@
 package cg
 
 import (
-	"sync"
 	"github.com/gmaclinuxer/gogame/ipc"
+	"sync"
 )
 
 type Player struct {

@@ -1,9 +1,9 @@
 package cg
 
 import (
-	"github.com/gmaclinuxer/gogame/ipc"
 	"encoding/json"
 	"errors"
+	"github.com/gmaclinuxer/gogame/ipc"
 )
 
 type CenterClient struct {

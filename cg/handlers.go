@@ -1,8 +1,8 @@
 package cg
 
 import (
-	"errors"
 	"encoding/json"
+	"errors"
 )
 
 func (s *CenterServer) addPlayer(params string) error {

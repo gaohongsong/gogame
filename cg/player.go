@@ -12,7 +12,7 @@ func NewPlayer() *Player {
 	go func(p *Player) {
 		for {
 			msg := <-player.mq
-			fmt.Printf("%s received message: %s", p.Name, msg.Content)
+			fmt.Printf("%s received message: %s\n", p.Name, msg.Content)
 		}
 	}(player)
 
