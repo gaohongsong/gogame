@@ -31,6 +31,6 @@ func main() {
 		printVersion()
 		return
 	}
-	
+
 	// go on
 }
